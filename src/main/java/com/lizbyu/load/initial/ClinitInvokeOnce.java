@@ -11,7 +11,10 @@ public class ClinitInvokeOnce {
                 Thread.sleep(5000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
+                // this thread should invoke interrupt or other threads'll stuck here
                 Thread.currentThread().interrupt();
+            } finally {
+                Logger.getGlobal().info("clinit end...");
             }
         }
     }

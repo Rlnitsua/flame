@@ -1,6 +1,6 @@
 package com.lizbyu.load.initial;
 
-import com.lizbyu.util.Logger;
+import java.util.logging.Logger;
 
 public class InitStaticVariable {
     private static int num0 = 1;
@@ -15,7 +15,7 @@ public class InitStaticVariable {
     private static int num1 = 1 ;
 
     public static void main(String[] args) {
-        Logger.info(num0);
-        Logger.info(num1);
+        Logger.getGlobal().info("num0 : " + num0);
+        Logger.getGlobal().info("num1 : " + num1);
     }
 }

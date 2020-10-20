@@ -1,6 +1,6 @@
 package com.lizbyu.load.initial;
 
-import com.lizbyu.util.Logger;
+import java.util.logging.Logger;
 
 public class NonClinit {
     @SuppressWarnings("unused")
@@ -8,6 +8,6 @@ public class NonClinit {
     private int num = 1;
 
     public static void main(String[] args) {
-        Logger.info("hello world");
+        Logger.getGlobal().info("hello world");
     }
 }
